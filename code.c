@@ -24,6 +24,7 @@ void insert()
 {
     printf("\nEnter position : ");
     scanf("%d",&pos);
+    if(pos<=0 || pos>=MAX)
     printf("\nEnter value : ");
     scanf("%d",&value);
 
@@ -90,7 +91,5 @@ int main()
         default:
             printf("Invalid choice");
         }
-
     }
-    return 0;
 }
